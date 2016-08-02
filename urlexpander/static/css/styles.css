@@ -1,7 +1,29 @@
-.delete {
+.delete a {
 	color: red;
+	text-decoration: none;
 }
 
 h1 {
 	font-weight: bold;
+}
+
+a h1 {
+	color: black;
+	text-decoration: none;
+}
+
+page-title:hover {
+	text-decoration: none;
+}
+
+.header {
+	margin-bottom: 20px;
+}
+
+.search-input {
+	margin: auto;
+}
+
+header {
+	text-align: center;
 }

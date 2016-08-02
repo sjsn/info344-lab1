@@ -8,10 +8,13 @@
 		<div class="detail">
 			<h2>Searched URL: {{url.url}}</h2>
 			<h3>Details: </h3>
-			<p>Destination URL: {{url.final_url}}</p>
+			<p>Destination URL: <a href="{{url.final_url}}">{{url.final_url}}</a></p>
 			<p>Webpage Title: {{url.title}}</p>
 			<p>Webpage Status: {{url.status}}</p>
 			<p>Request Date: {{url.date}}</p>
+		</div>
+		<div class="delete-btn">
+			<a class="btn btn-danger" href="../../delete/{{url.pk}}">Delete</a>
 		</div>
 	</section>
 {% endblock content %}
