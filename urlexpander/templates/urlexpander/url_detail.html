@@ -8,7 +8,12 @@
 		<div class="detail">
 			<h2>Searched URL: {{url.url}}</h2>
 			<h3>Details: </h3>
-			<p>Destination URL: <a href="{{url.final_url}}">{{url.final_url}}</a></p>
+			<p>Destination URL: 
+			{% if url.final_url == "Does not exist" %}
+				{{url.final_url}}</p>
+			{% else %}
+				<a href="{{url.final_url}}">{{url.final_url}}</a></p>
+			{% endif %}
 			<p>Webpage Title: {{url.title}}</p>
 			<p>Webpage Status: {{url.status}}</p>
 			<p>Request Date: {{url.date}}</p>
